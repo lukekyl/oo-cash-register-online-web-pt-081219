@@ -23,7 +23,7 @@ class CashRegister
       discount = total*@discount
       @total = discount.to_i
     end
-    @total
+    puts "After the discount, the total comes to $#{@total}."
   end
   
 end
