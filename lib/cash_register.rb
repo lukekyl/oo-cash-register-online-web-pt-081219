@@ -20,8 +20,7 @@ class CashRegister
   
   def apply_discount
     discount = @discount.to_f
-    binding.pry
-    total = @total
+    total = @total.to_f
     if !@discount.nil?
       new = total * discount
       @total = new
