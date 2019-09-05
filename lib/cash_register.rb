@@ -24,8 +24,9 @@ class CashRegister
     if !@discount.nil?
       new = total * discount
       @total = new
+      puts "After the discount, the total comes to $#{@total}."
     end
-    puts "After the discount, the total comes to $#{@total}."
+    
   end
   
 end
