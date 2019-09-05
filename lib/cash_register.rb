@@ -26,7 +26,7 @@ class CashRegister
       @total = new
       puts "After the discount, the total comes to $#{@total}."
     else 
-      puts "There was no employee discount."
+      puts "There was no discount to apply."
     end
   end
   
