@@ -22,7 +22,7 @@ class CashRegister
     discount = @discount.to_f * .01
     total = @total.to_f
     if !@discount.nil?
-      new = total * (discount / 100)
+      new = total * 
       @total = new
     end
     @total
