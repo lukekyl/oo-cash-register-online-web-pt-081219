@@ -18,11 +18,12 @@ class CashRegister
   end
   
   def apply_discount
+    total = @total
     if !@discount.nil?
-      total = @total.to_f
-      discount = total*@discount
-      @total = discount.to_i
+      new = total * @discount
+      @total = new
     end
+    @total
     puts "After the discount, the total comes to $#{@total}."
   end
   
