@@ -13,6 +13,8 @@ class CashRegister
       @total += price
       counter -= 1
     end
+    CART
+    @total
   end
   
 end
