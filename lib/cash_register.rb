@@ -18,6 +18,7 @@ class CashRegister
   end
   
   def apply_discount
+    discount = @discount.to_f
     total = @total
     if !@discount.nil?
       new = total * @discount.to_f
