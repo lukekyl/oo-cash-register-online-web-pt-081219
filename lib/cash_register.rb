@@ -42,7 +42,7 @@ class CashRegister
       void = @total
       @cart.pop
       @total = void - @last
-    elsif @cart.length <= 1 
+    elsif @cart.length == 1 
       @total = 0
       @cart = []
     end
