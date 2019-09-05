@@ -40,12 +40,9 @@ class CashRegister
   
   def void_last_transaction
       void = @total
-      counter = @last_qtd
-      while counter != -1
-        @cart.pop
-        @total = void - @last
-        counter -= 1
-      end 
+      @cart.pop
+      @total = void - (@last * @last_qtd)
+      
   end
   
 end
