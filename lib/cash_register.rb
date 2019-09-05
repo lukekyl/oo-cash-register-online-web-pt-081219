@@ -1,3 +1,4 @@
+require "pry"
 class CashRegister
   attr_accessor :total, :discount
   CART = {}
@@ -19,6 +20,7 @@ class CashRegister
   
   def apply_discount
     discount = @discount.to_f
+    binding.pry
     total = @total
     if !@discount.nil?
       new = total * discount
