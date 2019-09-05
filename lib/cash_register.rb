@@ -44,7 +44,7 @@ class CashRegister
       @total = void - @last
     elsif @cart.length == 1 
       @total = 0
-      @cart.pop
+      @cart = []
     end
       
   end
