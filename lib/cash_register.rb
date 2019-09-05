@@ -25,7 +25,6 @@ class CashRegister
       new = total * discount
       @total = new
     end
-    @total
     puts "After the discount, the total comes to $#{@total}."
   end
   
