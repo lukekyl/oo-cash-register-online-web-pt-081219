@@ -22,7 +22,7 @@ class CashRegister
       @total.to_f *.20
       @total.to_i
     end
-    
+    @total
   end
   
 end
