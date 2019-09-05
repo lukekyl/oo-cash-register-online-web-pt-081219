@@ -19,7 +19,7 @@ class CashRegister
   end
   
   def apply_discount
-    discount = @discount.to_f
+    discount = @discount.to_f * .01
     total = @total.to_f
     if @discount
       new = (total / discount) * 100
