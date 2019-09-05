@@ -6,9 +6,13 @@ class CashRegister
     @discount = discount
   end
   
-  def add_item(item, price)
-    CART[item] = price
-    @total += price
+  def add_item(item, price, quantity = 1)
+    counter = quantity
+    while counter != 0 
+      CART[item] = price
+      @total += price
+      counter -= 1
+    end
   end
   
 end
