@@ -1,6 +1,6 @@
 require "pry"
 class CashRegister
-  attr_accessor :total, :discount, :cart, :last
+  attr_accessor :total, :discount, :cart, :last, :last_qtd
   
   def initialize(discount = nil)
     @cart = []
@@ -19,6 +19,7 @@ class CashRegister
     @cart
     @total
     @last = price
+    @last_qtd = quantity
   end
   
   def apply_discount
@@ -38,14 +39,9 @@ class CashRegister
   end
   
   def void_last_transaction
-    if @cart.length > 1
       void = @total
       @cart.pop
-      @total = void - @last
-    elsif @cart.length == 1
-      @total = 0
-      @cart = []
-    end
+      @total = void - (@last * @last_qtd)
       
   end
   
