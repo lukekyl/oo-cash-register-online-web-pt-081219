@@ -42,7 +42,6 @@ class CashRegister
       void = @total
       @cart.pop
       @total = void - (@last * @last_qtd)
-      
   end
   
 end
