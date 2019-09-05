@@ -23,7 +23,7 @@ class CashRegister
       total *@discount
       total.to_i
     end
-    @total
+    @total = total
   end
   
 end
