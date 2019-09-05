@@ -21,8 +21,9 @@ class CashRegister
     if !@discount.nil?
       total = @total.to_f
       discount = total*@discount
+      @total = discount.to_i
     end
-    @total = discount.to_i
+    @total
   end
   
 end
