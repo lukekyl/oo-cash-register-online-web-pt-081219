@@ -21,7 +21,7 @@ class CashRegister
   def apply_discount
     discount = @discount.to_f * 0.01
     total = @total.to_f
-    if !@discount.nil?
+    if !@discount == 0
       new = total * discount
       @total = new
       puts "After the discount, the total comes to $#{@total}."
