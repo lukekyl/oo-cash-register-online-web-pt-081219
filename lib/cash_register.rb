@@ -45,8 +45,7 @@ class CashRegister
         @cart.pop
         @total = void - @last
         counter -= 1
-      end
-      
+      end 
   end
   
 end
