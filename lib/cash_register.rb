@@ -24,9 +24,9 @@ class CashRegister
     if @discount
       new = total - (total * discount)
       @total = new.to_i
-      puts "After the discount, the total comes to $#{@total}."
+      p "After the discount, the total comes to $#{@total}."
     else 
-      puts "There was no discount to apply."
+      p "There was no discount to apply."
     end
   end
   
