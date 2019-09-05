@@ -39,8 +39,9 @@ class CashRegister
   
   def void_last_transaction
     void = @total
-    @cart.unshift
-    @total = void - @last
+    if !@cart.length == 0
+      @cart.unshift
+      @total = void - @last
   end
   
 end
