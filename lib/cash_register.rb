@@ -32,7 +32,7 @@ class CashRegister
   end
   
   def items
-    @cart.uniq
+    @cart
   end
   
   def void_last_transaction
