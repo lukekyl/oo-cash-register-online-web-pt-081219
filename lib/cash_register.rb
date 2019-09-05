@@ -1,7 +1,7 @@
 require "pry"
 class CashRegister
   attr_accessor :total, :discount
-  @cart = []
+  @@cart = []
   def initialize(discount = nil)
     @total = 0 
     @discount = discount
@@ -10,11 +10,11 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     counter = quantity
     while counter != 0 
-      @cart << item
+      @@cart << item
       @total += price
       counter -= 1
     end
-    @cart
+    @@cart
     @total
   end
   
@@ -31,7 +31,7 @@ class CashRegister
   end
   
   def items
-    @cart.uniq
+    @@cart.uniq
   end
   
   def void_last_transaction
