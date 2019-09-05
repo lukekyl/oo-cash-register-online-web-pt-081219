@@ -26,7 +26,7 @@ class CashRegister
       @total = new.to_i
       p "After the discount, the total comes to $#{@total}."
     else 
-      p "There was no discount to apply."
+      p "There is no discount to apply."
     end
   end
   
