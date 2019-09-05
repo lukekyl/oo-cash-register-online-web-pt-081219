@@ -17,4 +17,12 @@ class CashRegister
     @total
   end
   
+  def apply_discount
+    if !@discount.nil?
+      @total.to_f *.20
+      @total.to_i
+    end
+    
+  end
+  
 end
