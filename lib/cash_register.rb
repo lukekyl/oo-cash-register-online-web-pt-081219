@@ -44,6 +44,7 @@ class CashRegister
       @total = void - @last
     else 
       @total = 0
+      @cart = []
     end
       
   end
